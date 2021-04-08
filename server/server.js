@@ -19,9 +19,9 @@ app.use('/api', (_req, res) => {
 	res.json({ data: characters });
 });
 
-// app.use('/', (_req, res) => {
-// 	res.send('Api is running on /api...');
-// });
+app.use('/', (_req, res) => {
+	res.send('Api is running on /api...');
+});
 
 app.listen(
 	PORT,
