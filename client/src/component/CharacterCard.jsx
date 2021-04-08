@@ -16,14 +16,14 @@ const CharacterCard = (props) => {
 	return (
 		<div>
 			<h2>{name}</h2>
-			<p>{height}</p>
-			<p>{mass}</p>
-			<p>{gender}</p>
-			<p>{born}</p>
-			<p>{species}</p>
-			<p>{hairColor}</p>
-			<p>{eyeColor}</p>
-			<p>{skinColor}</p>
+			<p>Height: {height}m</p>
+			<p>Weight: {mass}kg</p>
+			<p>Gender: {gender}</p>
+			<p>Born: {born}bby</p>
+			<p>Species: {species}</p>
+			<p>Hair Color: {hairColor}</p>
+			<p>Eye Color: {eyeColor}</p>
+			<p>Skin Color: {skinColor}</p>
 		</div>
 	);
 };
