@@ -19,7 +19,7 @@ app.use('/api', (_req, res) => {
 	res.json({ data: characters });
 });
 
-app.get('/', (_req, res) => {
+app.use('/', (_req, res) => {
 	res.sendFile(path.resolve(__dirname, '../client/build', 'index.html'));
 });
 
