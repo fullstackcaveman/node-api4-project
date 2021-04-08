@@ -19,8 +19,8 @@ app.use('/api', (_req, res) => {
 	res.json({ data: characters });
 });
 
-app.use('/', (_req, res) => {
-	res.send('Api is running on /api...');
+app.get('/', (_req, res) => {
+	res.sendFile(path.resolve(__dirname, '../client/build', 'index.html'));
 });
 
 app.listen(
