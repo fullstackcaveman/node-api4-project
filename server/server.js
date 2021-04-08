@@ -15,12 +15,12 @@ app.use(cors());
 app.use(express.json());
 app.use(helmet());
 
-app.use('/api', (_req, res) => {
+app.use('/api', (req, res) => {
 	res.json({ data: characters });
 });
 
-app.use('/', (_req, res) => {
-	res.sendFile(path.resolve(__dirname, '../client/build', 'index.html'));
+app.get('*', (req, res) => {
+	res.sendFile(path.join(__dirname + '../client/build/index.html'));
 });
 
 app.listen(
