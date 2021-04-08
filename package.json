@@ -23,7 +23,6 @@
 	},
 	"homepage": "https://github.com/fullstackcaveman/node-api4-project#readme",
 	"devDependencies": {
-		"colors": "^1.4.0",
 		"concurrently": "^6.0.1",
 		"nodemon": "^2.0.7"
 	},

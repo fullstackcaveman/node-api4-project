@@ -2,7 +2,6 @@ import express from 'express';
 import dotenv from 'dotenv';
 import cors from 'cors';
 import helmet from 'helmet';
-import colors from 'colors';
 
 import { characters } from './data/characterData.js';
 
@@ -26,8 +25,5 @@ app.use('/api', (_req, res) => {
 
 app.listen(
 	PORT,
-	console.log(
-		`Server running in ${process.env.NODE_ENV} mode on port: ${PORT}`.yellow
-			.bold
-	)
+	console.log(`Server running in ${process.env.NODE_ENV} mode on port: ${PORT}`)
 );
